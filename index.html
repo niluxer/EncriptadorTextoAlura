@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto.</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+</head>
+<body>
+    <header>
+        <div align="center"><img src="images/logo-aluraespanhol.svg" alt=""></div>
+        <h2>Encriptador y desencriptador de texto.</h2>
+        <h5>Favor de escribir el texto que desea encriptar.</h5>
+    </header>
+    <main>
+        <div class='parent'>
+            <div class='child'>
+                <form>
+                    <textarea id="cadena" cols="20" rows="8" placeholder="Escribe el texto..." onchange='this.value=this.value.toLowerCase();' required></textarea>
+                    <button id="btnEncriptar" class="btn-primary">Encriptar</button>
+                    <button id="btnDesencriptar" class="btn-secondary">Desencriptar</button>
+                </form>
+    
+            </div>
+            <div class='child'>
+                <div id="resultado" class="results-info">Resultado</div>
+                <button id="btnCopiar" class="btn-primary">Copiar</button>
+                <button id="btnPegar" style="display: none;">Pegar</button>
+            </div>
+        </div>
+          
+    </main>
+    <footer>
+        <div>&copy; 2023 México</div> 
+        <div>
+            J.J.S.F. (jesus.sanchez@itcelaya.edu.mx)
+            <br><i>@niluxerochi</i>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
